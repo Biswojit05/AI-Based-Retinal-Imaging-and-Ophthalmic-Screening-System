@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eye Disease Screening Chatbot</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" id="appContainer">
+    <header class="app-header">
+      <div class="avatar">👁️</div>
+      <div class="header-text">
+        <h1>EyeCare Assistant</h1>
+        <p>Upload a retina/eye photo &amp; get an instant AI screening</p>
+      </div>
+      <button id="clearChatBtn" class="clear-btn" title="Clear Chat">🔄</button>
+    </header>
+
+    <main id="chat" class="chat"></main>
+
+    <form id="composer" class="composer">
+      <label class="upload-btn" for="fileInput" title="Attach an eye photo">
+        📎
+        <input id="fileInput" type="file" accept="image/*" hidden />
+      </label>
+      <input id="textInput" type="text" placeholder="Attach a photo of the eye to begin…" disabled />
+      <button id="sendBtn" type="submit" disabled>Send</button>
+    </form>
+    <div id="dragOverlay" class="drag-overlay hidden">
+      <div class="drag-content">
+        <span>📥</span>
+        <p>Drop fundus photo here</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="imageModal" class="modal hidden">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

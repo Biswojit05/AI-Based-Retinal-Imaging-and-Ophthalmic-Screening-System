@@ -1,0 +1,16 @@
+Label mapping: {"['A']": 0, "['C']": 1, "['D']": 2, "['G']": 3, "['H']": 4, "['M']": 5, "['N']": 6, "['O']": 7}
+Device: cuda
+Epoch [1/10] Loss: 1.3557 Train Accuracy: 50.67%
+Epoch [2/10] Loss: 1.0146 Train Accuracy: 61.88%
+Epoch [3/10] Loss: 0.8631 Train Accuracy: 67.46%
+Epoch [4/10] Loss: 0.7628 Train Accuracy: 71.82%
+Epoch [5/10] Loss: 0.6575 Train Accuracy: 75.75%
+Epoch [6/10] Loss: 0.5679 Train Accuracy: 79.11%
+Epoch [7/10] Loss: 0.4659 Train Accuracy: 82.42%
+Epoch [8/10] Loss: 0.3949 Train Accuracy: 85.53%
+Epoch [9/10] Loss: 0.3286 Train Accuracy: 88.03%
+Epoch [10/10] Loss: 0.2836 Train Accuracy: 89.93%
+Test Accuracy: 66.22%
+Saved model weights to model\eye_disease_resnet50.pth
+Saved label mapping to model\labels.json
+Test accuracy: 66.22
